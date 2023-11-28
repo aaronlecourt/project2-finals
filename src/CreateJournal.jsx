@@ -13,7 +13,7 @@ const CreateJournal = () => {
         e.preventDefault();
         const journals = {subject, date, body}
         setIsPending(true);
-        fetch('http://localhost:8000/journals',{
+        fetch('http://localhost:8003/journals',{
             method: "POST",
             headers: {"Content-type": "application/json"},
             body: JSON.stringify(journals)

@@ -1,3 +1,10 @@
 {
-  "journals": []
+  "journals": [
+    {
+      "subject": "1st Journal Entry",
+      "date": "2023-11-28",
+      "body": "This is a journal entry",
+      "id": 1
+    }
+  ]
 }

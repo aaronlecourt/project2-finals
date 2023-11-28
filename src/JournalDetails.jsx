@@ -3,12 +3,12 @@ import { useParams, useNavigate } from 'react-router-dom';
 
 const JournalDetails = () => {
     const { id } = useParams();
-    const { data: journals, error, isPending } = useFetch('http://localhost:8000/journals/' + id);
+    const { data: journals, error, isPending } = useFetch('http://localhost:8003/journals/' + id);
 
     const navigate = useNavigate();
 
     const handleClick = () => {
-        fetch('http://localhost:8000/journals/' + journals.id, {
+        fetch('http://localhost:8003/journals/' + journals.id, {
             method: "DELETE",
         }).then(() => {
             navigate('/')
